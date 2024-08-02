@@ -4,8 +4,8 @@ if (fs.existsSync('config.env')) require('dotenv').config({ path: __dirname+'/co
 
 //═══════[Required Variables]════════\\
 global.owner = process.env.OWNER_NUMBER || '94770730717'
-global.mongodb = process.env.MONGODB_URI || "mongodb://u67wtnui9m87lq4yhmvv:tpelVygzO9NWafGwF0D@bmrkwjjqyq2xfesqxn7z-mongodb.services.clever-cloud.com:2052/bmrkwjjqyq2xfesqxn7z"
-global.port= process.env.PORT || 5000
+global.mongodb = process.env.MONGODB_URI || ""
+global.port= process.env.PORT || 8000
 global.email = 'sam@secktor.live'
 global.github = 'https://github.com/darkewing/DARK-EWING'
 global.location = 'Sultanpur IN'
@@ -16,7 +16,7 @@ global.website = 'https://github.com/darkewing/DARK-EWING' //wa.me/+910000000000
 global.THUMB_IMAGE = process.env.THUMB_IMAGE || 'https://raw.githubusercontent.com/SecktorBot/Brandimages/main/logos/SocialLogo%201.png'
 module.exports = {
   
-  sessionName:  process.env.SESSION_ID ||  "PASTE YOUR SESSION ID HERE",
+  sessionName:  process.env.SESSION_ID ||  "DARK-EWING;;;eyJub2lzZUtleSI6eyJwcml2YXRlIjp7InR5cGUiOiJCdWZmZXIiLCJkYXRhIjoiV01MQW9DZ05RZENEaTc3QWlTbXdaYnBKd3BTZGM0dVl0ZVdwYSthdUIzMD0ifSwicHVibGljIjp7InR5cGUiOiJCdWZmZXIiLCJkYXRhIjoib0lEQXE3Nm5OSDgvTWNmTXhuVnFqbjdwNlZUK21Ec3ZKYTB4Y1hsemJXUT0ifX0sInNpZ25lZElkZW50aXR5S2V5Ijp7InByaXZhdGUiOnsidHlwZSI6IkJ1ZmZlciIsImRhdGEiOiJtSE4xaDFXOURpQ0RvRXFBVGpicDVGVzdBdkVtV0VIYlZPWW9rNFNRWVUwPSJ9LCJwdWJsaWMiOnsidHlwZSI6IkJ1ZmZlciIsImRhdGEiOiJyWVdobjVKSTg2NXJoTVFmamFqRDcrTkRiVU1EVHdnRGk0Rjk1K2JuYmswPSJ9fSwic2lnbmVkUHJlS2V5Ijp7ImtleVBhaXIiOnsicHJpdmF0ZSI6eyJ0eXBlIjoiQnVmZmVyIiwiZGF0YSI6Ik9GTzVJM0d4bGw5SGxvSFZBam0wUFp6Ly9Ma05vRGVFT082VVV4ekQvVkk9In0sInB1YmxpYyI6eyJ0eXBlIjoiQnVmZmVyIiwiZGF0YSI6Illib3lqS3QzRExqeGZFc3FGZUt3K3ZSbWRqV3hiSHpWbk1vM3JYSGhUQ009In19LCJzaWduYXR1cmUiOnsidHlwZSI6IkJ1ZmZlciIsImRhdGEiOiJaKzRoOE5BNERZbEZMeC8vKzhjMnQ4RUhIRTFPL29QbEZJVkkzdENlYmlUZEYvZjNLdUc2VndFdmFVTXRZSjBkY1ZpZ1dtUVVMbENqZ1BSdk4zVzVoZz09In0sImtleUlkIjoxfSwicmVnaXN0cmF0aW9uSWQiOjEwMSwiYWR2U2VjcmV0S2V5IjoiSFJpRXJuTHlpbDRYNzRSejFCUVUyT1k3NW10NVRvOVRJT0VMUjAwOWpJWT0iLCJwcm9jZXNzZWRIaXN0b3J5TWVzc2FnZXMiOltdLCJuZXh0UHJlS2V5SWQiOjMxLCJmaXJzdFVudXBsb2FkZWRQcmVLZXlJZCI6MzEsImFjY291bnRTeW5jQ291bnRlciI6MCwiYWNjb3VudFNldHRpbmdzIjp7InVuYXJjaGl2ZUNoYXRzIjpmYWxzZX0sImRldmljZUlkIjoiU1Izb1M3M0FSOEc2QmtKdWxPajJQUSIsInBob25lSWQiOiI4YjY4N2E1YS00NmU2LTQxNmUtOTdhNy0wMTkyMjMxOTQxMWQiLCJpZGVudGl0eUlkIjp7InR5cGUiOiJCdWZmZXIiLCJkYXRhIjoiYUJiSGRCcEltbmcyOUpibnMyOGk5dnFOdGVZPSJ9LCJyZWdpc3RlcmVkIjpmYWxzZSwiYmFja3VwVG9rZW4iOnsidHlwZSI6IkJ1ZmZlciIsImRhdGEiOiJCekZuT240YktGNzNId1g2ODBzejBqUDVLOGM9In0sInJlZ2lzdHJhdGlvbiI6e30sImFjY291bnQiOnsiZGV0YWlscyI6IkNLdnN6TFVGRU1YQnRMVUdHQVVnQUNnQSIsImFjY291bnRTaWduYXR1cmVLZXkiOiJPeDhFYzVUZjJpUjBxcGx6UUZLVm1ZVTVaZjg5SlFlNVlYWmZkSHY3NXlFPSIsImFjY291bnRTaWduYXR1cmUiOiIxVk1BbkF4RmRMUHlBUUdDQmhYL0s2ajhGMzMvcFNKdHAxSHhrd0NkSFVhV0cwZTBTelJLN1I2cGVTRzlhTkJLUlFKM2Zpd21oeFNEemhHQWl3ZjJBUT09IiwiZGV2aWNlU2lnbmF0dXJlIjoid09lb3o5Y3R5V25TeHFIRUFYclFsWUpuYVA4VnpsTDRxVFlnR0gwZGREWlpnKzhNS01CUGtkZXJNbEZ2Rk9lVGp3U254QkRxWHBOUkhPNTU2S2tYakE9PSJ9LCJtZSI6eyJpZCI6Ijk0NzcwNzMwNzE3OjExQHMud2hhdHNhcHAubmV0In0sInNpZ25hbElkZW50aXRpZXMiOlt7ImlkZW50aWZpZXIiOnsibmFtZSI6Ijk0NzcwNzMwNzE3OjExQHMud2hhdHNhcHAubmV0IiwiZGV2aWNlSWQiOjB9LCJpZGVudGlmaWVyS2V5Ijp7InR5cGUiOiJCdWZmZXIiLCJkYXRhIjoiQlRzZkJIT1UzOW9rZEtxWmMwQlNsWm1GT1dYL1BTVUh1V0YyWDNSNysrY2gifX1dLCJwbGF0Zm9ybSI6ImFuZHJvaWQiLCJsYXN0QWNjb3VudFN5bmNUaW1lc3RhbXAiOjE3MjI2MjIxNTN9",
   botname:   process.env.BOT_NAME === undefined ? 'ᴅᴀʀᴋ ᴇᴡɪɴɢ 𝐁𝐨�' : process.env.BOT_NAME,
   ownername: process.env.OWNER_NAME === undefined ? 'excel' : process.env.OWNER_NAME,
   author:  process.env.PACK_INFO === undefined ? 'excel' : process.env.PACK_INFO.split(";")[0],
